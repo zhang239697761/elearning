@@ -4,5 +4,5 @@ import com.elearning.framework.cms.request.QueryPageRequest;
 import com.elearning.framework.model.response.QueryResponseResult;
 
 public interface CmsPageControllerApi {
-    public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest) ;
+    QueryResponseResult findList(Integer page, Integer size) ;
 }
