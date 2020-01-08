@@ -1,0 +1,24 @@
+package com.elearning.framework.page;
+
+/**
+ * 分页参数
+ * @author Louis
+ * @date Jan 19, 2019
+ */
+public class pageParam {
+	private String name;
+	private String value;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getValue() {
+		return value;
+	}
+	public void setValue(String value) {
+		this.value = value;
+	}
+}
