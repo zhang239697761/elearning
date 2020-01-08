@@ -1,10 +1,9 @@
 package com.elearning.framework.cms.response;
 
-import com.elearning.framework.model.response.ResultCode;
 import lombok.ToString;
 
 @ToString
-public enum CmsCode implements ResultCode {
+public enum CmsCode {
     CMS_ADDPAGE_EXISTSNAME(false,24001,"页面名称已存在！"),
     CMS_GENERATEHTML_DATAURLISNULL(false,24002,"从页面信息中找不到获取数据的url！"),
     CMS_GENERATEHTML_DATAISNULL(false,24003,"根据页面的数据url获取不到数据！"),
@@ -24,17 +23,14 @@ public enum CmsCode implements ResultCode {
         this.message = message;
     }
 
-    @Override
     public boolean success() {
         return success;
     }
 
-    @Override
     public int code() {
         return code;
     }
 
-    @Override
     public String message() {
         return message;
     }

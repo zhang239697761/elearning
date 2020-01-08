@@ -1,11 +1,13 @@
 package com.elearning.framework.cms;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -40,16 +42,16 @@ public class CmsPage {
     //状态
     private String pageStatus;
     //创建时间
-    private Date pageCreateTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+    private LocalDateTime pageCreateTime;
     //模版id
     private String templateId;
     //参数列表
     private List<CmsPageParam> pageParams;
     //模版文件Id
-//    private String templateFileId;
+    private String templateFileId;
     //静态文件Id
     private String htmlFileId;
     //数据Url
     private String dataUrl;
-
 }

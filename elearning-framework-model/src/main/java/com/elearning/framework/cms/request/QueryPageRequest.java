@@ -1,10 +1,9 @@
 package com.elearning.framework.cms.request;
 
-import com.elearning.framework.model.request.RequestData;
 import lombok.Data;
 
 @Data
-public class QueryPageRequest extends RequestData {
+public class QueryPageRequest {
     //站点id    
      private String siteId;
     // 页面ID    
