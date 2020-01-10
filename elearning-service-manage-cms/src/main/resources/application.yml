@@ -6,5 +6,5 @@ spring:
     name: elearning-service-manage-cms
   data:
     mongodb:
-      uri: mongodb://root:123456@10.10.12.63:27017
-      database: eElearning_cms
+      uri: mongodb://root:123456@39.97.249.245:27017
+      database: elearning_cms
